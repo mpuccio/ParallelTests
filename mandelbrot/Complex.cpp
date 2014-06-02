@@ -41,7 +41,7 @@ int main() {
 
 	const int iterations = 1000;
 	cout << "Starting: "<<endl;
-	cout << " float_v contains " <<  float_v::Size << " elemets!" << endl;
+	cout << " float_v contains " <<  float_v::Size << " elements!" << endl;
 	cout << " output contains " << output.entriesCount() << " elements " << endl;
 	cout << " output contains " << output.vectorsCount() << " vectors " << endl;
 	for(int i=0; i<size; ++i) {
