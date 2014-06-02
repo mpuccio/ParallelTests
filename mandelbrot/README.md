@@ -11,7 +11,7 @@ How to build with clang:
 clang++ -std=c++11 -lVc Complex.cpp -o Complex.o
 ```
 
-If you want to check how much you earn from vectorizing your code, try to compile it forcing the scalar implementation of the Vc library (no SIMD);
+If you want to check how much you earn from vectorizing your code, try to compile it forcing the scalar implementation of the Vc library (no SIMD):
 
 ```bash
 clang++ -std=c++11 -lVc -DVC_IMPL=Scalar Complex.cpp -o Complex.o
