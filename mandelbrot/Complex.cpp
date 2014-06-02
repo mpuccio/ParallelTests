@@ -22,10 +22,12 @@
  *
  *************************************************************************/
 
+
 #include <Vc/Vc>
 #include <fstream>
 #include "Complex.h"
 #include <iostream>
+#include <chrono>
 
 using namespace std;
 using Vc::float_v;
@@ -44,7 +46,10 @@ int main() {
 	cout << " float_v contains " <<  float_v::Size << " elements!" << endl;
 	cout << " output contains " << output.entriesCount() << " elements " << endl;
 	cout << " output contains " << output.vectorsCount() << " vectors " << endl;
-	for(int i=0; i<size; ++i) {
+
+	chrono::time_point<chrono::system_clock> start,end;
+	start = chrono::system_clock::now();
+ 	for(int i=0; i<size; ++i) {
 		const float_v xi = -2.f + 4.f*i/size;
 
 		int count = 0;
@@ -64,7 +69,10 @@ int main() {
 			count++;
 		}
 	}
-	
+	end = chrono::system_clock::now();
+	chrono::duration<double> elapsed_seconds = end-start;
+	cout << "Finished computation, elapsed time: " << elapsed_seconds.count() << "s\n";
+
 	ofstream f("dataVc.dat",ios::out);
 	for (size_t i = 0; i < output.entriesCount(); ++i) {
 		if(i%size==0 && i!=0) f << endl;
