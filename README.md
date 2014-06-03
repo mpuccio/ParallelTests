@@ -6,6 +6,9 @@ This is a public repository containing easy examples of the usage of:
 * OpenMP
 * Intel(R) TBB
 
+License disclaimer
+=============
+
 Permission to use, copy, modify, and distribute this software
 and its documentation for any purpose and without fee is hereby
 granted, provided that the above copyright notice appear in all
@@ -23,3 +26,5 @@ whatsoever resulting from loss of use, data or profits, whether
 in an action of contract, negligence or other tortious action,
 arising out of or in connection with the use or performance of
 this software.
+
+Please read the complete license in the LGPL file.
