@@ -2,9 +2,9 @@ ParallelTests
 =============
 
 This is a public repository containing easy examples of the usage of:
-* Vc library
-* OpenMP
-* Intel(R) TBB
+* [Vc library](http://code.compeng.uni-frankfurt.de/projects/vc)
+* [OpenMP](http://openmp.org/)
+* [Intel(R) TBB](https://www.threadingbuildingblocks.org/)
 
 License disclaimer
 =============
